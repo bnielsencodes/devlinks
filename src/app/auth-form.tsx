@@ -10,11 +10,19 @@ export default function AuthForm() {
   return (
     <Auth
       supabaseClient={supabase}
+      view="magic_link"
       appearance={{
         theme: ThemeSupa,
       }}
       theme="light"
       redirectTo="http://localhost:3000/auth/callback"
+      showLinks={false}
+      localization={{
+        variables: {
+          magic_link: {
+            email_input_placeholder: "e.g. alex@email.com",
+          },
+      }}
     />
   );
 }
