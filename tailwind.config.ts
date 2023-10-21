@@ -24,6 +24,8 @@ const config: Config = {
         warning: "#FF3939",
       },
       backgroundImage: {
+      fontFamily: {
+        sans: ["var(--font-instrument-sans)"],
       },
     },
   },
