@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
+import AuthForm from "./auth-form";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
           you
         </p>
       </div>
+      <div className="">
+        <AuthForm />
       </div>
     </div>
   );
