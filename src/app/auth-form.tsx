@@ -15,12 +15,16 @@ export default function AuthForm() {
         theme: ThemeSupa,
       }}
       theme="light"
+      providers={["github", "google"]}
       redirectTo="http://localhost:3000/auth/callback"
       showLinks={false}
       localization={{
         variables: {
           magic_link: {
             email_input_placeholder: "e.g. alex@email.com",
+          },
+          sign_in: {
+            social_provider_text: "Log in with {{provider}}",
           },
       }}
     />
