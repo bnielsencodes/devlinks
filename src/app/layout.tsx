@@ -28,7 +28,7 @@ const instrumentSans = localFont({
 
 export const metadata: Metadata = {
   title: "devlinks",
-  description: "A link sharing web app",
+  description: "A link sharing web app for developers",
 };
 
 export default function RootLayout({
