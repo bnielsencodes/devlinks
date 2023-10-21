@@ -13,6 +13,10 @@ export default function AuthForm() {
       view="magic_link"
       appearance={{
         theme: ThemeSupa,
+        style: {
+          divider: {
+            background: "#d9d9d9",
+          },
       }}
       theme="light"
       providers={["github", "google"]}
