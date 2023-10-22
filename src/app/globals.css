@@ -47,18 +47,25 @@ body {
   background: var(--color-neutral-500);
 }
 
-div.supabase-auth-ui_ui-container {
-  /* row-gap: 24px; */
-}
-
-/* socail login buttons */
+/* social login buttons */
 button.supabase-auth-ui_ui-button.c-bOcPnF-iwjZXY-color-default {
+  height: 46px;
   border: 1px solid var(--color-primary-100);
   background: var(--color-neutral-500);
   color: var(--color-primary-100);
   font-weight: 600;
 }
 
+button.supabase-auth-ui_ui-button.c-bOcPnF-iwjZXY-color-default:hover {
+  background: var(--color-primary-300);
+}
+
+/* first social login button */
+button.supabase-auth-ui_ui-button.c-bOcPnF-iwjZXY-color-default:first-of-type {
+  margin-bottom: 2px;
+}
+
+/* email input label */
 label.supabase-auth-ui_ui-label {
   margin-bottom: 4px;
   color: var(--color-neutral-100);
@@ -67,13 +74,15 @@ label.supabase-auth-ui_ui-label {
   line-height: 18px;
 }
 
-#email,
-#password {
+/* email input */
+#email {
+  height: 48px;
   padding-block: 12px;
   padding-right: 16px;
   padding-left: 44px;
   border-color: var(--color-neutral-300);
   border-radius: 8px;
+  margin-bottom: 8px;
   color: var(--color-neutral-100);
   font-size: 16px;
   font-weight: 400;
@@ -81,18 +90,21 @@ label.supabase-auth-ui_ui-label {
   caret-color: var(--color-primary-100);
 }
 
-#email::placeholder,
-#password::placeholder {
+#email:focus {
+  border: 1px solid var(--color-primary-100);
+  outline: var(--color-primary-100);
+  outline-offset: 1px;
+  box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+}
+
+#email::placeholder {
   color: #333;
   font-weight: 300;
   opacity: 0.5;
 }
 
-#email {
-  margin-bottom: 8px;
-}
-
-button.supabase-auth-ui_ui-button {
+/* magic link button */
+button.c-bOcPnF-cmFMMs-color-primary {
   padding-block: 12.5px;
   border: 0;
   border-radius: 8px;
@@ -100,6 +112,7 @@ button.supabase-auth-ui_ui-button {
   color: var(--color-neutral-500);
 }
 
-a.supabase-auth-ui_ui-anchor {
-  color: green;
+button.c-bOcPnF-cmFMMs-color-primary:hover:not(:disabled) {
+  box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+  background: var(--color-primary-200);
 }
