@@ -11,15 +11,15 @@ import localFont from "next/font/local";
 const instrumentSans = localFont({
   src: [
     {
-      path: "../../public/fonts/static/InstrumentSans-Regular.ttf",
+      path: "../../public/assets/fonts/static/InstrumentSans-Regular.ttf",
       weight: "400",
     },
     {
-      path: "../../public/fonts/static/InstrumentSans-SemiBold.ttf",
+      path: "../../public/assets/fonts/static/InstrumentSans-SemiBold.ttf",
       weight: "600",
     },
     {
-      path: "../../public/fonts/static/InstrumentSans-Bold.ttf",
+      path: "../../public/assets/fonts/static/InstrumentSans-Bold.ttf",
       weight: "700",
     },
   ],
