@@ -37,5 +37,69 @@ body {
   --color-primary-300: #efebff;
   --color-warning: #ff3939;
   background: var(--color-neutral-500);
+  font-family: var(--font-instrument-sans);
 }
+
+/* auth form */
+
+#auth-sign-in {
+  padding-inline: 32px;
+  background: var(--color-neutral-500);
+}
+
+div.supabase-auth-ui_ui-container {
+  /* row-gap: 24px; */
+}
+
+/* socail login buttons */
+button.supabase-auth-ui_ui-button.c-bOcPnF-iwjZXY-color-default {
+  border: 1px solid var(--color-primary-100);
+  background: var(--color-neutral-500);
+  color: var(--color-primary-100);
+  font-weight: 600;
+}
+
+label.supabase-auth-ui_ui-label {
+  margin-bottom: 4px;
+  color: var(--color-neutral-100);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+#email,
+#password {
+  padding-block: 12px;
+  padding-right: 16px;
+  padding-left: 44px;
+  border-color: var(--color-neutral-300);
+  border-radius: 8px;
+  color: var(--color-neutral-100);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  caret-color: var(--color-primary-100);
+}
+
+#email::placeholder,
+#password::placeholder {
+  color: #333;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+#email {
+  margin-bottom: 8px;
+}
+
+button.supabase-auth-ui_ui-button {
+  padding-block: 12.5px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--color-primary-100);
+  color: var(--color-neutral-500);
+}
+
+a.supabase-auth-ui_ui-anchor {
+  color: green;
 }
