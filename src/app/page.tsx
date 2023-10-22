@@ -1,20 +1,12 @@
 import Image from "next/image";
-import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
 import iconEmail from "/public/assets/images/icon-email.svg";
+import Header from "./components/header/Header";
 import AuthForm from "./auth-form";
 
 export default function Home() {
   return (
     <div className="p-8">
-      <header className="mb-16">
-        <Image
-          src={logoLarge}
-          alt="devlinks logo"
-          width="0"
-          height="0"
-          sizes="100vw"
-        />
-      </header>
+      <Header />
       <div className="mb-8">
         <h1 className="mb-2 text-neutral-100 text-2xl font-bold leading-9">
           Login
