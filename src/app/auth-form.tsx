@@ -23,7 +23,7 @@ export default function AuthForm() {
         }}
         theme="light"
         // social login options
-        providers={["github", "google"]}
+        providers={["github"]}
         redirectTo="http://localhost:3000/auth/callback"
         // hide anchor links
         showLinks={false}
