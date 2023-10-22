@@ -22,13 +22,12 @@ export default function AuthForm() {
           },
         }}
         theme="light"
-        // // no social login options
-        // providers={[]}
         // social login options
         providers={["github", "google"]}
         redirectTo="http://localhost:3000/auth/callback"
+        // hide anchor links
         showLinks={false}
-        // when showLinks, add custom input labels
+        // custom labels
         localization={{
           variables: {
             magic_link: {
@@ -36,19 +35,7 @@ export default function AuthForm() {
             },
             sign_in: {
               social_provider_text: "Log in with {{provider}}",
-              // email_label: "Email address",
-              // email_input_placeholder: "e.g. alex@email.com",
-              // password_label: "Password",
-              // password_input_placeholder: "Enter your password",
-              // button_label: "Login",
             },
-            // sign_up: {
-            //   email_label: "",
-            //   email_input_placeholder: "",
-            //   password_label: "Create password",
-            //   password_input_placeholder: "",
-            //   button_label: "Login",
-            // },
           },
         }}
       />
