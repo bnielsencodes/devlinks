@@ -1,12 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-// import { Instrument_Sans } from "next/font/google";
 import localFont from "next/font/local";
-
-// const instrumentSans = Instrument_Sans({
-//   subsets: ["latin"],
-//   variable: "--custom-font-instrument-sans",
-// });
 
 const instrumentSans = localFont({
   src: [
