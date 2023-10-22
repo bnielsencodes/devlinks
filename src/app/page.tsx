@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
+import iconEmail from "/public/assets/images/icon-email.svg";
 import AuthForm from "./auth-form";
 
 export default function Home() {
@@ -23,8 +24,16 @@ export default function Home() {
           you
         </p>
       </div>
-      <div className="">
+      <div className="relative">
         <AuthForm />
+        <Image
+          className="absolute bottom-[86px] left-4"
+          src={iconEmail}
+          alt="email icon"
+          width="0"
+          height="0"
+          sizes="100vw"
+        />
       </div>
     </div>
   );
