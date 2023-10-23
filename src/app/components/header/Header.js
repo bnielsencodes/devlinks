@@ -4,6 +4,7 @@ import Image from "next/image";
 import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
 import logoSmall from "/public/assets/images/logo-devlinks-small.svg";
 import LinksButton from "./LinksButton";
+import ProfileButton from "./ProfileButton";
 
 export default function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,6 +33,7 @@ export default function Header() {
       />
       <div className="flex items-center justify-center">
         <LinksButton windowWidth={windowWidth} />
+        <ProfileButton windowWidth={windowWidth} />
       </div>
     </header>
   );
