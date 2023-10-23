@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
 import logoSmall from "/public/assets/images/logo-devlinks-small.svg";
+import LinksButton from "./LinksButton";
 
 export default function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,6 +30,9 @@ export default function Header() {
         height="0"
         sizes="100vw"
       />
+      <div className="flex items-center justify-center">
+        <LinksButton windowWidth={windowWidth} />
+      </div>
     </header>
   );
 }
