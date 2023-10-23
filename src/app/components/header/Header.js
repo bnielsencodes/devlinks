@@ -5,6 +5,7 @@ import logoLarge from "/public/assets/images/logo-devlinks-large.svg";
 import logoSmall from "/public/assets/images/logo-devlinks-small.svg";
 import LinksButton from "./LinksButton";
 import ProfileButton from "./ProfileButton";
+import PreviewButton from "./PreviewButton";
 
 export default function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,6 +36,7 @@ export default function Header() {
         <LinksButton windowWidth={windowWidth} />
         <ProfileButton windowWidth={windowWidth} />
       </div>
+      <PreviewButton windowWidth={windowWidth} />
     </header>
   );
 }
