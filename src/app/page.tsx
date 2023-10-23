@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative">
         <AuthForm />
         <Image
-          className="absolute bottom-[86px] left-4"
+          className="absolute top-[135px] left-4"
           src={iconEmail}
           alt="email icon"
           width="0"
