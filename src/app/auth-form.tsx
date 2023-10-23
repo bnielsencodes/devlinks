@@ -24,7 +24,7 @@ export default function AuthForm() {
         theme="light"
         // social login options
         providers={["github"]}
-        redirectTo="http://localhost:3000/auth/callback"
+        redirectTo="http://devlinks-chi.vercel.app/auth/callback"
         // hide anchor links
         showLinks={false}
         // custom labels
