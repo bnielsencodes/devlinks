@@ -18,6 +18,7 @@ export default function Home() {
       </div>
       <div className="relative">
         <AuthForm />
+        {/* email icon */}
         <Image
           className="absolute top-[135px] left-4"
           src={iconEmail}
@@ -26,6 +27,12 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
+        {/* "or text in form divider" */}
+        <p className="absolute top-[69px] left-0 flex justify-center w-full">
+          <span className="w-5 bg-neutral-500 text-neutral-200 text-sm text-center text-opacity-60">
+            or
+          </span>
+        </p>
       </div>
     </div>
   );
